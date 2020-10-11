@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Stock Generator V1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //Pantalla registro/inicio sesión
+    <string name="Nombre">Nombre: </string>
+    <string name="Apellido">Apellidos: </string>
+    <string name="email"> E-mail: </string>
+    <string name="telefono">NºTeléfono: </string>
+    <string name="Password"> Password: </string>
+    <string name="InicioSesion">Inicio Sesión</string>
+    <string name="registrar">Registrar</string>
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListadoArticulos">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="394dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_idL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="ID a Modificar"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorNegro" />
+
+                    <EditText
+                        android:id="@+id/et_NomPL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Nombre Producto"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/et_DescrL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Descripción"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/et_tiendaL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Tienda"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/et_MarcaL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Marca"
+                        android:inputType="textPersonName" />
+
+                    <Spinner
+                        android:id="@+id/sp_CatL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et_precioL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="numberDecimal" />
+
+                    <EditText
+                        android:id="@+id/et_CantidadL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="numberSigned" />
+
+                    <EditText
+                        android:id="@+id/et_EmailL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress" />
+
+                    <Button
+                        android:id="@+id/btnModificar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="Modificar"
+                        android:text="Modificar" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="Buscar"
+                        android:text="Buscar" />
+
+                    <Button
+                        android:id="@+id/btn_Eliminar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="Eliminar"
+                        android:text="Eliminar" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="consultarArticulos"
+                        android:text="Ver todos los Artículos" />
+
+                    <Button
+                        android:id="@+id/recyclerArti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="irRecyclerArti"
+                        android:text="Recycler Articulos" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/lv_listadoArticulos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
